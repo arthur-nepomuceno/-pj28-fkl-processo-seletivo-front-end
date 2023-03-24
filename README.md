@@ -75,7 +75,7 @@ npm run dev
 
 1.5 O ícone do lápis permite que você acesse a tela de edição de cadastros.
 
-2. Tela de Adição de Cadastros ('/cadastros')
+2. Tela de Adição de Cadastros ('/cadastro')
 
 2.1 Nesta tela você pode adicionar um novo registro ao sistema.
 
@@ -85,7 +85,7 @@ npm run dev
 
 2.4 Ao clicar em "Salvar" você adiciona o registro e é redirecionado para a tela de lista, com a lista atualizada incluindo seu novo registro.
 
-3. Tela de Edição de Cadastro.
+3. Tela de Edição de Cadastro. ('/editar/:id')
 
 3.1 Nesta tela você pode conferir e editar toda e qualquer informação do cadastro escolhido para edição.
 
