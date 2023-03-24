@@ -44,7 +44,7 @@ export function Cadastro() {
         }
     }
 
-    async function cancelarEnvio(){
+    async function cancelarEnvio() {
         setDoc('');
         setContato('');
         setNomeFantasia('');
@@ -90,11 +90,11 @@ export function Cadastro() {
                 </div>
                 <div className="col-6">
                     <label htmlFor="inputAddress" className="form-label">Endereço</label>
-                    <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St" onChange={e => { setEndereco(e.target.value) }} required />
+                    <input type="text" className="form-control" id="inputAddress" onChange={e => { setEndereco(e.target.value) }} required />
                 </div>
                 <div className="col-6">
                     <label htmlFor="inputAddress2" className="form-label">Bairro</label>
-                    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" onChange={e => { setBairro(e.target.value) }} required />
+                    <input type="text" className="form-control" id="inputAddress2" onChange={e => { setBairro(e.target.value) }} required />
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="inputCity" className="form-label">Cidade</label>
@@ -102,9 +102,34 @@ export function Cadastro() {
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="inputState" className="form-label">UF</label>
-                    <select id="inputState" className="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <select id="inputState" className="form-select" onChange={e => { setUf(e.target.value) }}>
+                        <option selected>AC</option>
+                        <option>AL</option>
+                        <option>AM</option>
+                        <option>AP</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MG</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>PR</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>RS</option>
+                        <option>SC</option>
+                        <option>SE</option>
+                        <option>SP</option>
+                        <option>TO</option>
                     </select>
                 </div>
                 <div className="col-md-2">

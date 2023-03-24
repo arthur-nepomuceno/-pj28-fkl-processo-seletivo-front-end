@@ -2,7 +2,7 @@ import API from "../../api/Api";
 import "../Lista/lista.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Cadastro } from "../../types/cadastroTypes";
+import { Cadastro } from "../../tipos/cadastroTypes";
 
 export function Lista() {
 

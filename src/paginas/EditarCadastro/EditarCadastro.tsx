@@ -2,7 +2,7 @@ import "../Cadastro/cadastro.css";
 import API from "../../api/Api";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Cadastro } from "../../types/cadastroTypes";
+import { Cadastro } from "../../tipos/cadastroTypes";
 
 export function EditarCadastro() {
 
@@ -17,7 +17,7 @@ export function EditarCadastro() {
     const [endereco, setEndereco] = useState('');
     const [bairro, setBairro] = useState('');
     const [cidade, setCidade] = useState('');
-    const [uf, setUf] = useState('RJ');
+    const [uf, setUf] = useState('');
     const [cep, setCep] = useState('');
     const navigate = useNavigate();
 
@@ -132,9 +132,35 @@ export function EditarCadastro() {
                 </div>
                 <div className="col-md-4">
                     <label htmlFor="inputState" className="form-label">UF</label>
-                    <select id="inputState" className="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <select id="inputState" className="form-select" onChange={e => { setUf(e.target.value) }}>
+                        <option selected>{uf}</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AM</option>
+                        <option>AP</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MG</option>
+                        <option>MS</option>
+                        <option>MT</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>PR</option>
+                        <option>RJ</option>
+                        <option>RN</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>RS</option>
+                        <option>SC</option>
+                        <option>SE</option>
+                        <option>SP</option>
+                        <option>TO</option>
                     </select>
                 </div>
                 <div className="col-md-2">
