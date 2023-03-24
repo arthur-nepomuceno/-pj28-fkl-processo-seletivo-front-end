@@ -18,7 +18,7 @@ Para utilizar esta aplicação, certifique-se de ter feito o download e iniciali
 
 
 ## Apresentação
-   Este projeto é o
+   Este projeto é a interface para uma API que permite o cadastro, a visualização, deleção e edição de informações de empresas. 
    
 ***
 
