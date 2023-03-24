@@ -62,9 +62,10 @@ npm run dev
 
 ***
 ## Como utilizar
-
+```
 1. Tela de Lista de Cadastros ('/lista-de-cadastros').
-
+```
+```
 1.1 Nesta tela você visualiza automaticamente todos os cadastros já feitos.
 
 1.2 Basta digitar em um dos campos de busca e apertar o botão "Filtrar" para fazer uma busca de acordo com o parâmetro que você escolher. NOTA: é possível buscar por qualquer um dos três parâmetros disponíveis, e apenas um de cada vez.
@@ -74,9 +75,11 @@ npm run dev
 1.4 O ícone da lixeira, presente em casa item da lista, permite que você exclua aquele item.
 
 1.5 O ícone do lápis permite que você acesse a tela de edição de cadastros.
-
+```
+```
 2. Tela de Adição de Cadastros ('/cadastro')
-
+```
+```
 2.1 Nesta tela você pode adicionar um novo registro ao sistema.
 
 2.2 Todos os campos devem ser preenchidos.
@@ -84,15 +87,17 @@ npm run dev
 2.3 Ao clicar em "Cancelar" você volta para a tela de visualização da lista de cadastros.
 
 2.4 Ao clicar em "Salvar" você adiciona o registro e é redirecionado para a tela de lista, com a lista atualizada incluindo seu novo registro.
-
+```
+```
 3. Tela de Edição de Cadastro. ('/editar/:id')
-
+```
+```
 3.1 Nesta tela você pode conferir e editar toda e qualquer informação do cadastro escolhido para edição.
 
 3.2 Ao clicar em "Cancelar" você volta para a tela de visualização da lista de cadastros.
 
-2.4 Ao clicar em "Editar" você salva sua edição e é redirecionado para a tela da lista, com a lista atualizada, incluindo seu registro editado.
-
+3.3 Ao clicar em "Editar" você salva sua edição e é redirecionado para a tela da lista, com a lista atualizada, incluindo seu registro editado.
+```
 ###### [voltar para o sumário](#sumário)
 ***
 
