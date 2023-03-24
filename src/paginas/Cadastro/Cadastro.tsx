@@ -1,6 +1,7 @@
-import '../Cadastro/cadastro.css'
-import API from '../../api/Api'
-import { useState } from 'react'
+import "../Cadastro/cadastro.css";
+import API from "../../api/Api";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Cadastro() {
 
@@ -15,6 +16,7 @@ export function Cadastro() {
     const [cidade, setCidade] = useState('');
     const [uf, setUf] = useState('RJ');
     const [cep, setCep] = useState('');
+    const navigate = useNavigate();
 
     async function Send(event: any) {
         event.preventDefault();
@@ -35,6 +37,7 @@ export function Cadastro() {
 
         try {
             const response = await API.post('/cadastro', body);
+            navigate('/lista-de-cadastros')
             console.log(response.data);
         } catch (error) {
             console.log(error)
