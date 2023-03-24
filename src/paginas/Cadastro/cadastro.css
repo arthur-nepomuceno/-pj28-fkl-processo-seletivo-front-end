@@ -1,0 +1,31 @@
+.bg-gray {
+    background-color: #E2E6E9;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-save {
+    background-color: #39AFD1;
+    color: #FFFFFF;
+}
+
+.bg-save:hover {
+    background-color: #215BA6;
+    color: #FFFFFF;
+}
+
+.bg-cancel {
+    background-color: #F05A7C;
+    color: #FFFFFF;
+}
+
+.bg-cancel:hover {
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.btn-outline-none {
+    outline: none;
+}
