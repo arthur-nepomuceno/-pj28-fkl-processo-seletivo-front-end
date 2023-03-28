@@ -63,6 +63,7 @@ export function EditarCadastro() {
 
         try {
             const response = await API.post('/editar', body);
+            alert('Cadastro editado com sucesso');
             navigate('/lista-de-cadastros')
             console.log(response.data);
         } catch (error) {
@@ -91,7 +92,7 @@ export function EditarCadastro() {
     useEffect(() => { buscarCadastroPorId(id) }, [])
 
     return (
-        <div className="container align-self-center p-3 bg-gray">
+        <div className="container align-self-center p-3" style={{background: "#E3E7EA"}}>
             <h5 className="m-3">Editar Cadastro</h5>
             <form className="row g-3 m-3 p-3 bg-white" onSubmit={editarCadastro}>
                 <div className="col-md-6">
@@ -169,10 +170,10 @@ export function EditarCadastro() {
                 </div>
                 <div className='d-flex justify-content-end'>
                     <div className="col-1">
-                        <button type="button" className="btn btn-primary" onClick={cancelarEnvio}>Cancelar</button>
+                        <button type="button" style={{color: "white"}} className="btn btn-sweet-red" onClick={cancelarEnvio}>Cancelar</button>
                     </div>
                     <div className="col-1">
-                        <button type="submit" className="btn btn-primary">Editar</button>
+                        <button type="submit" style={{color: "white"}} className="btn btn-sky-blue">Editar</button>
                     </div>
                 </div>
             </form>

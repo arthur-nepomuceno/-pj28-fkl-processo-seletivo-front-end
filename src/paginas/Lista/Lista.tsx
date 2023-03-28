@@ -62,7 +62,7 @@ export function Lista() {
     useEffect(() => { buscarCadastros() }, [])
 
     return (
-        <div className="container align-self-center p-3 bg-gray">
+        <div className="container align-self-center p-3 bg-gray" style={{background: "#E3E7EA"}}>
             <h5 className="m-3">Listagem de Pessoas</h5>
             <form className="row g-3 m-3 p-3 bg-white" onSubmit={filtrarCadastros}>
                 <div className="col-md-6">
@@ -79,7 +79,7 @@ export function Lista() {
                 </div>
                 <div className="col-md-2">
                     <div className="col d-flex">
-                        <button type="submit" className="btn btn-primary">
+                        <button type="submit" style={{color: "white"}}className="btn btn-sky-blue">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-search me-1" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
@@ -89,7 +89,7 @@ export function Lista() {
                 </div>
                 <div className="d-flex justify-content-start">
                     <div className="col-1">
-                        <button type="button" className="btn btn-primary rounded-pill" onClick={incluirCadastro}>
+                        <button type="button" style={{color: "white"}}className="btn btn-sky-blue" onClick={incluirCadastro}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus-circle-fill m-1" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
                             </svg>

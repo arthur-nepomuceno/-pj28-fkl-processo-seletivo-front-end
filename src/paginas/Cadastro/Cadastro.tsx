@@ -37,6 +37,7 @@ export function Cadastro() {
 
         try {
             const response = await API.post('/cadastro', body);
+            alert('Cadastro feito com sucesso.');
             navigate('/lista-de-cadastros')
             console.log(response.data);
         } catch (error) {
@@ -61,7 +62,7 @@ export function Cadastro() {
     }
 
     return (
-        <div className="container align-self-center p-3 bg-gray">
+        <div className="container align-self-center p-3" style={{background: "#E3E7EA"}}>
             <h5 className="m-3">Cadastro de Pessoas</h5>
             <form className="row g-3 m-3 p-3 bg-white" onSubmit={enviarCadastro}>
                 <div className="col-md-6">
@@ -78,7 +79,7 @@ export function Cadastro() {
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="inputPassword4" className="form-label">Telefone do Contato</label>
-                    <input type="text" className="form-control" id="inputPassword4" onChange={e => { setTelefoneContato(e.target.value) }} required />
+                    <input type="number" className="form-control" id="inputPassword4" onChange={e => { setTelefoneContato(e.target.value) }} required />
                 </div>
                 <div className="col-md-6">
                     <label htmlFor="inputEmail4" className="form-label">Razão Social</label>
@@ -134,14 +135,14 @@ export function Cadastro() {
                 </div>
                 <div className="col-md-2">
                     <label htmlFor="inputZip" className="form-label">CEP</label>
-                    <input type="text" className="form-control" id="inputZip" onChange={e => { setCep(e.target.value) }} required />
+                    <input type="number" className="form-control" id="inputZip" onChange={e => { setCep(e.target.value) }} required />
                 </div>
                 <div className='d-flex justify-content-end'>
                     <div className="col-1">
-                        <button type="button" className="btn btn-primary" onClick={cancelarEnvio}>Cancelar</button>
+                        <button type="button" style={{color: "white"}} className="btn btn-sweet-red" onClick={cancelarEnvio}>Cancelar</button>
                     </div>
                     <div className="col-1">
-                        <button type="submit" className="btn btn-primary">Salvar</button>
+                        <button type="submit" style={{color: "white"}} className="btn btn-sky-blue">Salvar</button>
                     </div>
                 </div>
             </form>
