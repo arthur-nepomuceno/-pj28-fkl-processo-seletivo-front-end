@@ -105,7 +105,9 @@ export function Lista() {
                         <thead className="table-secondary">
                             <tr>
                                 <th scope="col">Código</th>
-                                <th scope="col">Nome</th>
+                                <th scope="col">Contato</th>
+                                <th scope="col">Razão Social</th>
+                                <th scope="col">Nome Fantasia</th>
                                 <th scope="col">Cidade</th>
                                 <th scope="col">UF</th>
                                 <th scope="col">Ações</th>
@@ -119,6 +121,8 @@ export function Lista() {
                                             <tr>
                                                 <td>{item.id}</td>
                                                 <td>{item.contato}</td>
+                                                <td>{item.razaoSocial}</td>
+                                                <td>{item.nomeFantasia}</td>
                                                 <td>{item.cidade}</td>
                                                 <td>{item.uf}</td>
                                                 <td>
